@@ -1,0 +1,134 @@
+@-webkit-keyframes rain_effect {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+
+    50% {
+        background-position: 400px 800px, 300px 300px, 200px 200px;
+        background-color: #FF69B4
+    }
+
+    100% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+        background-color: #F8C8DC
+    }
+}
+
+body {
+    background-image: url("../icon/하트배경.png");
+    background-size: cover;
+    -webkit-animation: rain_effect 40s linear infinite;
+    font-family: '둥근모꼴';
+}
+.contain{
+    text-align: center;
+    padding-top:20px;
+}
+
+.link {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    margin-right: 10px;
+    padding-top: 50px;
+}
+
+.link.twitter {
+    background-image: url(../icon/icon-twitter.png);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.link.facebook {
+    background-image: url(../icon/icon-facebook.png);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.link.kakao {
+    background-image: url(../icon/icon-kakao.png);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.link.url {
+    background-image: url(../icon/url.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 39px;
+    background-size: 39px;
+    text-align: center;
+}
+.link.re {
+    background-image: url(../icon/되돌아가기.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 39px;
+    text-align: center;
+}
+
+h4{
+    margin:10px;
+}
+
+@media (max-width: 768px){
+img{
+    width: 100%;
+}}
+
+@media (min-width: 992px){
+    img{
+        width:30%;
+    }
+}
+@media (min-device-width : 768px) and (max-device-width : 1023px){
+    img{
+        width:100%;
+    }
+    .contain{
+    padding-top:100px;
+    font-size:xx-large;
+    }
+
+    h4{
+    margin:20px
+    }
+
+    .link {
+    font-size:20px;
+    }
+}
+
+img{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+#toast {
+    position: fixed;
+    bottom: 50px;
+    left: 80%;
+    padding: 15px 15px;
+    transform: translate(-50%, 10px);
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: .8rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s, visibility .5s, transform .5s;
+    background: rgba(0, 0, 0, .35);
+    color: #fff;
+    z-index: 10000;
+}
+
+#toast.reveal {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0)
+}
+
+.link:active{
+    transform: translateY(4px);
+}

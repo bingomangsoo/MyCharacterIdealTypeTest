@@ -1,0 +1,98 @@
+@-webkit-keyframes rain_effect {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+
+    50% {
+        background-position: 400px 800px, 300px 300px, 200px 200px;
+        background-color: #FF69B4
+    }
+
+    100% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+        background-color: #F8C8DC
+    }
+}
+
+body {
+    background-image: url("../icon/background.png");
+    background-size: contain;
+    background-position-x: center;
+    -webkit-animation: rain_effect 40s linear infinite;
+}
+
+.contain {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.btn {
+
+    background-color: transparent;
+    border: none;
+
+    display: inline-block;
+
+    border: none;
+
+    outline: none;
+
+    border-radius: 10px;
+
+    width: 20%;
+
+    font: "둥근모꼴";
+}
+
+.btn:active {
+    transform: translateY(4px);
+}
+
+@media (max-width: 768px){
+    .img1{
+        width: 70%;
+        margin-bottom: 40px;
+    }
+    .btn{
+        width: 60%;
+    }
+    .img2{
+        width: 60%;
+    }
+    .contain{
+        padding-top: 200px;
+    }
+
+}
+
+@media (min-width: 992px){
+    .img1{
+        width: 30%;
+        margin-bottom: 40px;
+    }
+    .btn{
+        width: 40%;
+    }
+    .img2{
+        width: 40%;
+    }
+    .contain{
+        padding-top: 200px;
+    }
+}
+@media (min-device-width : 768px) and (max-device-width : 1023px) {
+    .contain{
+    padding-top:300px;
+    }
+    .img1{
+    width:80%;
+    margin-bottom:80px;
+    }
+    .btn{
+    width:40%;
+    }
+    .img2{
+    width:100%;}
+}

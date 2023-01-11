@@ -1,0 +1,124 @@
+@-webkit-keyframes rain_effect {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+
+    50% {
+        background-position: 400px 800px, 300px 300px, 200px 200px;
+        background-color: #FF69B4
+    }
+
+    100% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+        background-color: #F8C8DC
+    }
+}
+
+body {
+    font-family: '둥근모꼴';
+    background-size: 40%;
+    background-position-x: center;
+    -webkit-animation: rain_effect 60s linear infinite;
+}
+
+/* 모바일 최적화 */
+
+@media (max-width: 768px) {
+    .contain {
+        text-align: center;
+        padding-top: 120px;
+    }
+
+    .const1 {
+        margin-bottom: 20px;
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+        width: 310px;
+        height: 25px;
+        font-family: '둥근모꼴';
+        font-size: medium;
+    }
+
+    h3 {
+        margin-bottom: 100px;
+    }
+
+    img {
+        margin-bottom: 80px;
+        width: 100%;
+    }
+
+    .result {
+        margin-bottom: 30px;
+    }
+}
+
+/* 데스크탑 최적화*/
+@media (min-width: 992px) {
+    .contain {
+        text-align: center;
+        padding-top: 160px;
+    }
+
+    .const1 {
+        margin-bottom: 20px;
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+        width: 310px;
+        height: 25px;
+        font-family: '둥근모꼴';
+        font-size: medium;
+    }
+
+    h3 {
+        margin-bottom: 100px;
+    }
+
+    img {
+        margin-bottom: 80px;
+        width: 30%;
+    }
+
+    .result {
+        margin-bottom: 30px;
+    }
+    
+}
+/* 패드 */
+@media (min-device-width : 768px) and (max-device-width : 1023px){
+    .contain {
+        text-align: center;
+        padding-top: 230px;
+    }
+
+    .const1 {
+        margin-bottom: 20px;
+        display: block;
+        margin: auto;
+        margin-bottom: 40px;
+        width: 700px;
+        height: 50px;
+        font-family: '둥근모꼴';
+        font-size: xx-large;
+    }
+
+    h3 {
+        margin-bottom: 100px;
+        font-size: xx-large;
+    }
+}
+
+
+input{
+    border-radius: 5px;
+    border: 1.5px solid gray;
+}
+input:hover{
+    background-color: rgb(220, 242, 251);
+}
+input:active{
+    transform: translateY(4px);
+}
+
