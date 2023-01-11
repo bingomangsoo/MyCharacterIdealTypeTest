@@ -15,15 +15,21 @@
 }
 
 @font-face {
-    font-family: '둥근모꼴';
-    src: url(DungGeunMo.ttf);
+    font-family: 'DungGeunMo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 body {
-    font-family: '둥근모꼴';
+    font-family: 'DungGeunMo';
     background-size: 40%;
     background-position-x: center;
     -webkit-animation: rain_effect 60s linear infinite;
+}
+
+.const1{
+    font-family: 'DungGeunMo';
 }
 
 /* 모바일 최적화 */
@@ -41,7 +47,6 @@ body {
         margin-bottom: 20px;
         width: 310px;
         height: 25px;
-        font-family: '둥근모꼴';
         font-size: medium;
     }
 
@@ -73,7 +78,6 @@ body {
         margin-bottom: 20px;
         width: 310px;
         height: 25px;
-        font-family: '둥근모꼴';
         font-size: medium;
     }
 
@@ -105,7 +109,6 @@ body {
         margin-bottom: 40px;
         width: 700px;
         height: 50px;
-        font-family: '둥근모꼴';
         font-size: xx-large;
     }
 
