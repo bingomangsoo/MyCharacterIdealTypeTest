@@ -31,7 +31,7 @@ https://bingomangsoo.github.io/MyCharacterIdealTypeTest/
 <img src= "이상형테스트/카카오톡공유하기2.png" width="40%">
 </div>
 
-# 사용자
+# 📱사용자의 후기
 <div style="display:flex;">
 <img src= "이상형테스트/사용자1.png" width="40%">
 <img src= "이상형테스트/사용자2.png" width="40%">
