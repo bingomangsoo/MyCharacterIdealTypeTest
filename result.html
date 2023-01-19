@@ -10,14 +10,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript">
 
-        var imgURl;
-        var charName;
+        let imgURl;
+        let charName;
 
         $(document).ready(function () {
-            var index = location.href.substr(
+            let index = location.href.substr(
                 location.href.lastIndexOf('=') + 1
             );
-            console.log('index : ' + index);
 
             if (index == 0) {
                 $(".contain h2").after('<h3 class="result">< 란 나기사 ></h3>');
@@ -110,12 +109,13 @@
                 imgURl = "https://ifh.cc/g/S0npQG.jpg"
                 charName = "루피";
             }
+            
         });
     </script>
 
     <script>
 
-        var thisUrl = document.URL;
+        let thisUrl = document.URL;
 
         function shareTwitter() {
 
@@ -124,7 +124,7 @@
         }
 
         function toast() {
-            var textarea = document.createElement("textarea");
+            let textarea = document.createElement("textarea");
             document.body.appendChild(textarea)
             textarea.value = thisUrl;
             textarea.select();
